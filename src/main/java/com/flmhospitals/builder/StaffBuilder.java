@@ -30,7 +30,7 @@ public class StaffBuilder {
 	public static StaffAddress buildStaffAdddressFromStaffAddressDto(StaffAddressDto staffAddressDto) {
 		
 		return StaffAddress.builder()
-				.landmark(staffAddressDto.getLandmark())
+				.landMark(staffAddressDto.getLandmark())
 				.city(staffAddressDto.getCity())
 				.state(staffAddressDto.getState())
 				.country(staffAddressDto.getCountry())

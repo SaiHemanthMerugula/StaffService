@@ -24,6 +24,8 @@ public class StaffAddress {
     private Long staffAddressId;
 
     private String street;
+    
+    private String landMark;
 
     private String city;
 
@@ -33,13 +35,14 @@ public class StaffAddress {
 
     private String pinCode;
 
-	public StaffAddress(String street, String city, String state, String country, String pinCode) {
+	public StaffAddress(String street, String city, String state, String country, String pinCode,String landMark) {
 		super();
 		this.street = street;
 		this.city = city;
 		this.state = state;
 		this.country = country;
 		this.pinCode = pinCode;
+		this.landMark =landMark;
 	}
     
     
