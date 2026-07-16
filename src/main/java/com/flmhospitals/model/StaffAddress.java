@@ -10,7 +10,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Entity
 @Table(name = "staff_address")
 @Data
@@ -18,34 +17,30 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class StaffAddress {
-	
+
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long staffAddressId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long staffAddressId;
 
-    private String street;
-    
-    private String landMark;
+	private String street;
 
-    private String city;
+	private String landMark;
 
-    private String state;
+	private String city;
 
-    private String country;
+	private String state;
 
-    private String pinCode;
+	private String country;
 
-	public StaffAddress(String street, String city, String state, String country, String pinCode,String landMark) {
+	private String pinCode;
+
+	public StaffAddress(String landmark, String city, String state, String country, String pinCode) {
 		super();
-		this.street = street;
 		this.city = city;
 		this.state = state;
 		this.country = country;
 		this.pinCode = pinCode;
-		this.landMark =landMark;
+		this.landMark = landMark;
 	}
-    
-    
-
 
 }
